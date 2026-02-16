@@ -867,3 +867,88 @@ img {
     width: 100%;
   }
 }
+
+/* media bp for 768px */
+@media (min-width: 768px), (max-width: 1157px) {
+  .container {
+    width: 768px;
+    padding: 0 16px;
+  }
+
+  .logo-link {
+    margin-right: auto;
+  }
+
+  .nav-ul {
+    margin: auto;
+  }
+
+  .address-info {
+    margin-left: auto;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero h1 {
+    margin-bottom: 36px;
+  }
+
+  .features-ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .features-ul li {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .container-svg-features {
+    display: none;
+  }
+
+  .team-ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .team-ul .team-li {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .team-cards .container {
+    padding: 0 108px;
+  }
+
+  .portfolio .container {
+    padding: 0 16px;
+  }
+
+  .portfolio-ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .portfolio-ul .portfolio-li-elem {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .page-footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 108px;
+  }
+
+  .container-footer-logo {
+    margin-right: 24px;
+  }
+}
+
+/*  */
+@media (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+}
