@@ -801,18 +801,15 @@ img {
 /* media breakpoints */
 
 /* media bp for 320px */
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .container {
-    width: 320px;
-    position: relative;
+    width: 100%;
     padding: 0 15px;
   }
 
   .mobile-label {
-    content: '';
-    position: absolute;
-    top: 21px;
-    right: 20px;
+    display: flex;
+    margin: 21px 0 21px auto;
   }
 
   .mobile-svg-icon {
@@ -826,7 +823,7 @@ img {
     display: none;
   }
 
-  .mobile-close-button {
+  .modal-close-button {
     display: none;
   }
 
@@ -834,22 +831,21 @@ img {
     display: none;
   }
 
-  a {
+  /* a {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     font-weight: 700;
-  }
+  } */
 
   .mobile-navbar-checkbox:checked ~ .nav-main > .nav-ul {
     display: flex;
     flex-direction: column;
-    height: 640px;
   }
 
   .mobile-navbar-checkbox:checked ~ .address-info {
     display: flex;
-    align-items: left;
+    flex-direction: column;
   }
 
   .hero h1 {
