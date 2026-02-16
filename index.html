@@ -32,10 +32,28 @@
   <body>
     <header class="main-header">
       <div class="container">
+        <input
+          type="checkbox"
+          name="mobile-navbar"
+          class="mobile-navbar-checkbox visually-hidden"
+          id="mobile-menu"
+        />
+        <label class="mobile-label" for="mobile-menu">
+          <svg class="mobile-svg-icon" width="17" height="15">
+            <use href="./images/icons.svg#mobile-navbar"></use>
+          </svg>
+        </label>
+        <button type="button" class="mobile-close-button">
+          <svg class="svg-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#close" />
+          </svg>
+        </button>
+
         <nav class="nav-main" aria-label="Main navigation">
           <a href="./index.html" class="logo-link"
             >Web<span class="logo">Studio</span></a
           >
+
           <ul class="nav-ul">
             <li class="nav-li-elem">
               <a href="./index.html" class="nav-li-a active-link">Studio</a>
