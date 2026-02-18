@@ -32,25 +32,11 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <input
-          type="checkbox"
-          name="mobile-navbar"
-          class="mobile-navbar-checkbox visually-hidden"
-          id="mobile-menu"
-        />
-
-        <!-- <button type="button" class="modal-close-button">
-          <svg class="svg-close-icon" width="8" height="8">
-            <use href="./images/icons.svg#close" />
-          </svg>
-        </button> -->
-
         <nav class="nav-main" aria-label="Main navigation">
-          <a href="./index.html" class="logo-link"
+          <a href="./index.html" class="logo-link logo-web"
             >Web<span class="logo">Studio</span></a
           >
-
-          <ul class="nav-ul">
+          <ul class="nav-ul list-header">
             <li class="nav-li-elem">
               <a href="./index.html" class="nav-li-a active-link">Studio</a>
             </li>
@@ -77,11 +63,12 @@
             </li>
           </ul>
         </address>
-        <label class="mobile-label" for="mobile-menu">
-          <svg class="mobile-svg-icon" width="17" height="15">
-            <use href="./images/icons.svg#mobile-navbar"></use>
+
+        <button type="button" class="burger-btn">
+          <svg class="burger-svg-icon" width="24" height="24">
+            <use href="./images/icons.svg#burger-icon" />
           </svg>
-        </label>
+        </button>
       </div>
     </header>
 
@@ -378,7 +365,7 @@
         </div>
       </section>
 
-      <section class="portfolio section">
+      <section class="portfolio section hidden">
         <div class="container">
           <h2 class="portfolio-header">Our Portfolio</h2>
           <ul class="portfolio-ul">
@@ -502,7 +489,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container">
         <div class="container-footer-logo">
           <a href="./index.html" class="footer-link"
@@ -572,7 +559,7 @@
       </div>
     </footer>
 
-    <div class="modal-overlay-popup">
+    <div class="modal-overlay-popup hidden">
       <div class="modal-window">
         <button type="button" class="modal-close-button">
           <svg class="svg-close-icon" width="8" height="8">
