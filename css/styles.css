@@ -1106,7 +1106,7 @@ button {
 }
 
 /* images for 2x resolution */
-@media (min-resolution: 2x) {
+@media (min-resolution: 196dpi) {
   .hero .container {
     background-image:
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
